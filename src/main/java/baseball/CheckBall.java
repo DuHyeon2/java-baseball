@@ -7,7 +7,7 @@ import java.util.List;
 
 public class CheckBall {
 
-    public static List<Integer> computerBall(){
+    public List<Integer> computerBall(){
         List<Integer> computer = new ArrayList<>();
         while (computer.size() < 3) {
             int randomNumber = Randoms.pickNumberInRange(1, 9);
@@ -18,7 +18,7 @@ public class CheckBall {
         return computer;
     }
 
-    public static List<Integer> checkBall(List<Integer> myBall, List<Integer> computer) {
+    public List<Integer> checkBall(List<Integer> myBall, List<Integer> computer) {
         int strike = 0, ball = 0;
         List<Integer> check = new ArrayList<>();
         for (int i = 0; i < 3; i++) {
@@ -32,5 +32,5 @@ public class CheckBall {
         check.add(ball);
         return check;
     }
-    
+
 }
