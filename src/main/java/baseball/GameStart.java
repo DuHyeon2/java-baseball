@@ -18,18 +18,15 @@ public class GameStart {
             my_ball.add(i);
         }
         rightBall.rightBall(checkBall.checkBall(my_ball,checkBall.computerBall()));
-//        restart();
+        restart();
     }
 
-//    public void restart(){
-//        System.out.print("게임을 새로 시작하려면 1, 종료하려면 2를 입력하세요. ");
-//        String restart = Console.readLine();
-//        if(restart.equals("1")){
-//            gameStart();
-//        }
-//        else if (restart.equals("2")) {
-//            System.out.println("");
-//        }
-//    }
+    public void restart(){
+        System.out.print("게임을 새로 시작하려면 1, 종료하려면 2를 입력하세요. ");
+        String restart = Console.readLine();
+        if(restart.equals("1")) {
+            gameStart();
+        }
+    }
 }
 
